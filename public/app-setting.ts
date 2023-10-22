@@ -28,4 +28,4 @@ export const PERM = {
   APROVE: '04',
   VIEW: '05'
 };
-export const ApiUrl = "http://192.168.1.10:5251/";
+export const ApiUrl = "http://42.116.242.252:5251/";
