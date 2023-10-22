@@ -1,12 +1,12 @@
 'use client';
-import { Metadata } from 'next';
+// import { Metadata } from 'next';
 import { useEffect } from "react";
 import { AuthService } from "@/shared/services";
 import { useRouter } from "next/navigation";
-export const metadata: Metadata = {
-  title: 'quan tri',
-  description: 'quan tri nextjs13',
-};
+// export const metadata: Metadata = {
+//   title: 'quan tri',
+//   description: 'quan tri nextjs13',
+// };
 export default function Page() {
   const {getOauth } = AuthService();
   const router = useRouter();
