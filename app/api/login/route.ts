@@ -16,6 +16,7 @@ export async function POST(
           client_secret: process.env.CLIENT_SECRET!,
         });
         // Xử lý kết quả từ API (nếu cần) và gửi phản hồi cho máy khách
+        console.log(process.env.CLIENT_ID);
         return NextResponse.json(response.data);
       } catch (error) {
         // Xử lý lỗi và gửi phản hồi lỗi cho máy khách
