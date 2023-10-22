@@ -28,4 +28,4 @@ export const PERM = {
   APROVE: '04',
   VIEW: '05'
 };
-export const ApiUrl = "http://localhost:64536/";
+export const ApiUrl = "http://localhost:5251/";
