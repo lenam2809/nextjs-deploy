@@ -19,8 +19,9 @@ export async function POST(
         // Xử lý kết quả từ API (nếu cần) và gửi phản hồi cho máy khách
         return NextResponse.json(response.data);
       } catch (error) {
+        console.log(error);
         // Xử lý lỗi và gửi phản hồi lỗi cho máy khách
-        return new NextResponse('Error' + error, { status: 400 });
+        return new NextResponse('Error + ' + error, { status: 400 });
       }
   
    
