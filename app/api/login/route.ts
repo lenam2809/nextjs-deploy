@@ -21,8 +21,9 @@ export async function POST(
         console.log(process.env.CLIENT_ID);
         return NextResponse.json(response.data);
       } catch (error) {
+        console.log(error);
         // Xử lý lỗi và gửi phản hồi lỗi cho máy khách
-        return new NextResponse('Error', { status: 400 });
+        return new NextResponse('Error + ' + error, { status: 400 });
       }
   
    
